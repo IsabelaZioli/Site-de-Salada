@@ -226,3 +226,82 @@ h1 {
     flex-grow: 1; /* Faz o texto ocupar o espaço disponível */
     margin-left: 20px; /* Espaçamento entre a imagem e os textos */
 }
+
+.footer-cart {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #006400; /* Cor do fundo */
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff; /* Cor do texto */
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 24px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.view-cart-btn {
+    background-color: #fff;
+    color: #006400;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-cart-btn:hover {
+    background-color: #003d00;
+    color: #fff;
+}
+
+ul#lista-carrinho {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+#lista-carrinho li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: #006400;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#lista-carrinho li button {
+    background-color: #006400;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#lista-carrinho li button:hover {
+    background-color: #003d00;
+}

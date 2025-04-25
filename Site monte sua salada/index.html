@@ -14,8 +14,8 @@
         <div class="top-bar">
             <div class="icon-question">?</div>
             <nav class="menu">
-                <a href="#" class="menu-item">Cadastro</a>
-                <a href="#" class="menu-item">Login</a>
+                <a href="#" class="menu-item">Cadastre-se</a>
+                <a href="#" class="menu-item">Entre</a>
             </nav>
         </div>
     </header>
@@ -33,7 +33,7 @@
                     <p class="ceasar">Salada Ceasar:</p>
                     <p class="informacao">Alface romana, queijo parmesão ralado, croutons e molho cremoso</p>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Salada Ceasar')">+</button>
+                <button class="add-to-cart" onclick="addToCart('Salada Ceasar', 19.99)">+</button>
             </div>
             <div class="box3">
                 <img src="images/salada-grega.png" alt="Salada Grega" class="dish-image">
@@ -41,7 +41,7 @@
                     <p class="ceasar">Salada Grega:</p>
                     <p class="informacao">Pepino, tomate, queijo feta, cebola roxa e azeitona preta</p>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Salada Grega')">+</button>
+                <button class="add-to-cart" onclick="addToCart('Salada Grega', 22.50)">+</button>
             </div>
             <div class="box4">
                 <img src="images/salada-aniston.png" alt="Salada Jennifer Aniston" class="dish-image">
@@ -49,9 +49,19 @@
                     <p class="ceasar">Salada Jennifer Aniston:</p>
                     <p class="informacao">Alface romana, bacon, abacate, tomate cereja, pepino, cebola roxa e queijo feta</p>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Salada Jennifer Aniston')">+</button>
+                <button class="add-to-cart" onclick="addToCart('Salada Jennifer Aniston', 25.00)">+</button>
             </div>
         </section>
+        <section class="footer-cart">
+            <div class="cart">
+                <p id="cart-count">0 itens</p>
+                <p id="cart-total">Total: R$ 0,00</p>
+                <button class="view-cart-btn" onclick="viewCart()">Ver Sacola</button>
+            </div>
+            <ul id="lista-carrinho"></ul>
+        </section>
+        
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
