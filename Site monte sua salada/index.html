@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <title>Monte seu Balde de Salada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="icon-question">?</div>
+            <nav class="menu">
+                <a href="#" class="menu-item">Cadastro</a>
+                <a href="#" class="menu-item">Login</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <h1>Monte Seu Próprio Balde de Salada</h1>
+        </section>
+        <section class="contentbox1">
+        <div class="box1">Conheça nossos pratos prontos:</div>
+        </section>
+        <section class="content">
+            <div class="box2">
+                <img src="images/salada-ceasar.png" alt="Salada Ceasar" class="dish-image">
+                <div class="info-container">
+                    <p class="ceasar">Salada Ceasar:</p>
+                    <p class="informacao">Alface romana, queijo parmesão ralado, croutons e molho cremoso</p>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Salada Ceasar')">+</button>
+            </div>
+            <div class="box3">
+                <img src="images/salada-grega.png" alt="Salada Grega" class="dish-image">
+                <div class="info-container">
+                    <p class="ceasar">Salada Grega:</p>
+                    <p class="informacao">Pepino, tomate, queijo feta, cebola roxa e azeitona preta</p>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Salada Grega')">+</button>
+            </div>
+            <div class="box4">
+                <img src="images/salada-aniston.png" alt="Salada Jennifer Aniston" class="dish-image">
+                <div class="info-container">
+                    <p class="ceasar">Salada Jennifer Aniston:</p>
+                    <p class="informacao">Alface romana, bacon, abacate, tomate cereja, pepino, cebola roxa e queijo feta</p>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Salada Jennifer Aniston')">+</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

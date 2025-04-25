@@ -1,0 +1,228 @@
+.amatic-sc-regular {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .amatic-sc-bold {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+/* Reset básico para remover margens e espaçamentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: olivedrab;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+}
+
+/* Top bar (header) */
+/* Configuração específica para a barra superior */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #006400;
+    height: 150px; /* Defina a altura que preferir */
+    width: 100vw; /* Garante 100% da largura da viewport */
+}
+
+.icon-question {
+    background-color: #fff;
+    color: #006400;
+    font-size: 24px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.menu {
+    margin-right: 50px;
+}
+
+.menu-item {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0 15px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/* Banner principal */
+.banner {
+    background-color: #fff;
+    width: 90%;
+    height: 200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.banner h1 {
+    color: #006400;
+    font-size: 100px;
+    text-align: center;
+}
+
+/* Boxes */
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.contentbox1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 100vw;
+}
+
+.box1 {
+    background-color: #006400; /* Mesma cor do topo */
+    width: 200vw; /* Igual ao top banner */
+    height: 200px; /* Altere se precisar ajustar a altura */
+    margin: 20px auto; /* Centraliza */
+    display: flex; /* Para alinhar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    border-radius: 10px; /* Mantém bordas arredondadas */
+    color: #fff; /* Texto branco para contraste */
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 700; /* Negrito */
+    font-size: 60px; /* Texto maior */
+}
+
+.box2 {
+    background-color: #fff;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    color: #006400;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+
+.informacao {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+
+.ceasar {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-size: 55px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.box3 {
+    background-color: #fff;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    color: #006400;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+
+.box4 {
+    background-color: #fff;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    color: #006400;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+
+.dish-image {
+    width: 200px; /* Largura fixa */
+    height: 200px; /* Altura fixa */
+    object-fit: cover; /* Garante que a imagem não distorça */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-right: 20px; /* Espaçamento entre imagem e texto */
+}
+
+.add-to-cart {
+    background-color: #006400; /* Cor do botão */
+    color: white; /* Cor do texto ou símbolo */
+    font-size: 24px; /* Tamanho do símbolo */
+    border: none; /* Remove borda padrão */
+    border-radius: 50%; /* Formato circular */
+    width: 40px; /* Tamanho do botão */
+    height: 40px; /* Tamanho do botão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Define o ponteiro como mão ao passar */
+    transition: background-color 0.3s; /* Efeito suave */
+    margin-left: 20px; /* Espaçamento entre o botão e o texto */
+}
+
+.add-to-cart:hover {
+    background-color:#003d00; /* Cor ao passar o mouse */
+}
+
+.box2, .box3, .box4 {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Distribui os elementos */
+    background-color: #fff; /* Cor de fundo */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-bottom: 20px; /* Espaçamento entre as caixas */
+    padding: 20px; /* Espaçamento interno */
+    width: 90%; /* Largura das caixas */
+    height: auto; /* Altura adaptável */
+    margin: 20px auto; /* Centraliza na tela */
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column; /* Alinha os textos verticalmente */
+    flex-grow: 1; /* Faz o texto ocupar o espaço disponível */
+    margin-left: 20px; /* Espaçamento entre a imagem e os textos */
+}
