@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="top-bar">
-            <div class="icon-question">?</div>
+            <h1 class="cristal-salad">Cristal's Salad</h1>
             <nav class="menu">
                 <a href="#" class="menu-item">Cadastre-se</a>
                 <a href="#" class="menu-item">Entre</a>
@@ -24,41 +24,52 @@
             <h1>Monte Seu Próprio Balde de Salada</h1>
         </section>
         <section class="contentbox1">
-        <div class="box1">Conheça nossos pratos prontos:</div>
+            <div class="box1">Conheça nossos pratos prontos:</div>
         </section>
         <section class="content">
+            <!-- Prato 1 -->
             <div class="box2">
                 <img src="images/salada-ceasar.png" alt="Salada Ceasar" class="dish-image">
                 <div class="info-container">
                     <p class="ceasar">Salada Ceasar:</p>
                     <p class="informacao">Alface romana, queijo parmesão ralado, croutons e molho cremoso</p>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Salada Ceasar', 19.99)">+</button>
+                <div class="action-buttons">
+                    <button class="add-to-cart" onclick="addToCart('Salada Ceasar', 19.99)" aria-label="Adicionar Salada Ceasar">+</button>
+                    <button class="remove-from-cart" onclick="removeSingleItem('Salada Ceasar', 19.99)" aria-label="Remover Salada Ceasar">-</button>
+                </div>
             </div>
+            <!-- Prato 2 -->
             <div class="box3">
                 <img src="images/salada-grega.png" alt="Salada Grega" class="dish-image">
                 <div class="info-container">
                     <p class="ceasar">Salada Grega:</p>
                     <p class="informacao">Pepino, tomate, queijo feta, cebola roxa e azeitona preta</p>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Salada Grega', 22.50)">+</button>
+                <div class="action-buttons">
+                    <button class="add-to-cart" onclick="addToCart('Salada Grega', 22.50)" aria-label="Adicionar Salada Grega">+</button>
+                    <button class="remove-from-cart" onclick="removeSingleItem('Salada Grega', 22.50)" aria-label="Remover Salada Grega">-</button>
+                </div>
             </div>
+            <!-- Prato 3 -->
             <div class="box4">
                 <img src="images/salada-aniston.png" alt="Salada Jennifer Aniston" class="dish-image">
                 <div class="info-container">
                     <p class="ceasar">Salada Jennifer Aniston:</p>
                     <p class="informacao">Alface romana, bacon, abacate, tomate cereja, pepino, cebola roxa e queijo feta</p>
                 </div>
-                <button class="add-to-cart" onclick="addToCart('Salada Jennifer Aniston', 25.00)">+</button>
+                <div class="action-buttons">
+                    <button class="add-to-cart" onclick="addToCart('Salada Jennifer Aniston', 25.00)" aria-label="Adicionar Salada Jennifer Aniston">+</button>
+                    <button class="remove-from-cart" onclick="removeSingleItem('Salada Jennifer Aniston', 25.00)" aria-label="Remover Salada Jennifer Aniston">-</button>
+                </div>
             </div>
         </section>
         <section class="footer-cart">
-            <div class="cart">
+            <div class="cart-header">
                 <p id="cart-count">0 itens</p>
                 <p id="cart-total">Total: R$ 0,00</p>
-                <button class="view-cart-btn" onclick="viewCart()">Ver Sacola</button>
             </div>
-            <ul id="lista-carrinho"></ul>
+            <ul id="cart-items-list"></ul> <!-- Lista dos itens no carrinho -->
         </section>
         
     </main>
